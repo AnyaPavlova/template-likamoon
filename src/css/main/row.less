@@ -1,0 +1,294 @@
+.row {
+  display     : flex;
+  flex-wrap   : wrap;
+  margin-left : -20px;
+  margin-right: -20px;
+  position    : relative;
+
+  @media screen and (max-width: 960px) {
+    margin-left : -15px;
+    margin-right: -15px;
+  }
+
+  @media screen and (max-width: 670px) {
+    margin-left : -10px;
+    margin-right: -10px;
+  }
+
+  &--center-vertical {
+    align-content: center;
+    align-items  : center;
+  }
+}
+
+.col {
+  padding-left : 20px;
+  padding-right: 20px;
+
+  @media screen and (max-width: 960px) {
+    padding-left : 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (max-width: 670px) {
+    padding-left : 10px;
+    padding-right: 10px;
+  }
+}
+
+.row--null {
+  margin-left : 0;
+  margin-right: 0;
+
+  @media screen and (max-width: 960px) {
+    margin-left : 0;
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 670px) {
+    margin-left : 0;
+    margin-right: 0;
+  }
+}
+
+.row--null>.col {
+  padding-left : 0;
+  padding-right: 0;
+
+  @media screen and (max-width: 960px) {
+    padding-left : 0;
+    padding-right: 0;
+  }
+
+  @media screen and (max-width: 670px) {
+    padding-left : 0;
+    padding-right: 0;
+  }
+}
+
+.row--big {
+  //не забываем overflow: hidden у контейнера-родителя, тк inner содержит padding-и 30px
+  margin-left : -40px;
+  margin-right: -40px;
+
+  @media screen and (max-width: 960px) {
+    margin-left : -20px;
+    margin-right: -20px;
+  }
+
+  @media screen and (max-width: 670px) {
+    margin-left : -20px;
+    margin-right: -20px;
+  }
+}
+
+.row--big>.col {
+  padding-left : 40px;
+  padding-right: 40px;
+
+  @media screen and (max-width: 960px) {
+    padding-left : 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (max-width: 670px) {
+    padding-left : 20px;
+    padding-right: 20px;
+  }
+}
+
+.row--small {
+  margin-left : -8px;
+  margin-right: -8px;
+
+  @media screen and (max-width: 960px) {
+    margin-left : -8px;
+    margin-right: -8px;
+  }
+
+  @media screen and (max-width: 670px) {
+    margin-left : -8px;
+    margin-right: -8px;
+  }
+}
+
+.row--small>.col {
+  padding-left : 8px;
+  padding-right: 8px;
+
+  @media screen and (max-width: 960px) {
+    padding-left : 8px;
+    padding-right: 8px;
+  }
+
+  @media screen and (max-width: 670px) {
+    padding-left : 8px;
+    padding-right: 8px;
+  }
+}
+
+.col-1 {
+  width: 8.33%;
+
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+.col-2 {
+  width: 16.66%;
+
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+.col-3 {
+  width: 25%;
+
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+.col-4 {
+  width: 33.33%;
+
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+.col-5 {
+  width: 41.66%;
+
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+.col-6 {
+  width: 50%;
+
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+.col-7 {
+  width: 58.33%;
+
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+.col-8 {
+  width: 66.66%;
+
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+.col-9 {
+  width: 75%;
+
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+.col-10 {
+  width: 83.33%;
+
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+.col-11 {
+  width: 91.66%;
+
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-five {
+  width: 20%;
+
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+}

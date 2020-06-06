@@ -1,0 +1,43 @@
+{
+  "name": "template-likamoon",
+  "version": "2.0.0",
+  "description": "Cборщик на less",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "plugins": "gulp plugins",
+    "svg": "gulp svg",
+    "images": "gulp images",
+    "fonts": "gulp fonts",
+    "clean": "gulp clean",
+    "php": "gulp php",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnyaPavlova/template-likamoon.git"
+  },
+  "author": "Lika Moon <anjutalove@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnyaPavlova/template-likamoon/issues"
+  },
+  "homepage": "https://github.com/AnyaPavlova/template-likamoon#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "browser-sync": "^2.23.6",
+    "css-mqpacker": "^6.0.2",
+    "del": "^5.1.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-file-include": "^2.1.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgo": "^2.1.1"
+  }
+}
