@@ -1,0 +1,21 @@
+.test {
+    .row-mixin(30px);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: @mob) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    &__col {
+        .col-mixin(30px);
+        width: 33.333%;
+
+        @media screen and (max-width: @mob) {
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+        }
+    }
+}

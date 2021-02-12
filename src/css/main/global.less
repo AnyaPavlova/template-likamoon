@@ -41,10 +41,10 @@ body {
   position: relative;
 
   @media screen and (max-width: 1800px) { position: relative;}
-  @media screen and (max-width: 1340px) { position: relative;}  /*inner - 1280px + 30px*2 */
-  @media screen and (max-width: 1200px) { position: relative;}  /*lg*/
-  @media screen and (max-width: 960px) { position: relative;}  /*md*/
-  @media screen and (max-width: 670px) { position: relative;}  /*sm*/
+  @media screen and (max-width: @inner) { position: relative;}  /*inner - 1280px + 30px*2 = 1340px */
+  @media screen and (max-width: @tablet) { position: relative;}  /*lg - 1200px*/
+  @media screen and (max-width: @ipad) { position: relative;}  /*md - 960px*/
+  @media screen and (max-width: @mob) { position: relative;}  /*sm - 670px*/
 
   @media screen and (min-width: 961px) { position: relative;}
 }
@@ -81,7 +81,7 @@ h1 {
   padding-bottom: 60px;
   text-transform: uppercase;
 
-  @media screen and (max-width: 670px) {
+  @media screen and (max-width: @mob) {
     font-size: 33px;
   }
 }
@@ -90,7 +90,7 @@ h2 {
   font-weight: 600;
   font-size  : 40px;
 
-  @media screen and (max-width: 670px) {
+  @media screen and (max-width: @mob) {
     font-size: 30px;
   }
 }
@@ -100,7 +100,7 @@ h3 {
   font-size  : 25px;
   line-height: 1.6;
 
-  @media screen and (max-width: 670px) {
+  @media screen and (max-width: @mob) {
     font-size: 21px;
   }
 }

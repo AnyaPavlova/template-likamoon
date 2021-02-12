@@ -1,5 +1,24 @@
-@h1-fz-mobile: 20px;
-@h1-fz-tablet: 32px;
-@h1-fz-desktop: 48px;
+// Colors
+@color-red: #FF0017;
+@color-black: #212121;
+@color-gray: #868686;
+@color-dark-gray: #666666;
+@color-light-gray: #BFC2C4;
 
-@font: 'GothamPro', sans-serif;
+//Row, col
+.row-mixin(@margin: 10px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -@margin;
+    margin-right: -@margin;
+}
+.col-mixin(@padding: 10px) {
+    padding-left: @padding;
+    padding-right: @padding;
+}
+
+// breakpoints
+@mob: 670px;
+@ipad: 960px;
+@tablet: 1200px;
+@inner: 1340px;
