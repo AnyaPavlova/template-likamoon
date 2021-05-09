@@ -19,3 +19,18 @@
         }
     }
 }
+.test-2 {
+    .row-mixin(10px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__col {
+        .col-mixin(10px);
+        .col-4;
+
+        &--offset {
+            .offset-2;
+        }
+    }
+
+}
