@@ -1,0 +1,53 @@
+.js-hide {
+  display: none !important;
+}
+
+.js-show {
+  display: block !important;
+}
+
+.js-tabs-info {
+  display: none;
+}
+
+.js-tabs-info--open {
+  display: block;
+}
+
+.js-form-messange {
+  display: none;
+}
+
+.js-form-messange--error {
+  color  : @color-red;
+  display: block !important;
+}
+
+.js-form-messange--ok {
+  color  : @color-green;
+  display: block !important;
+}
+
+// Ошибки заполнения
+.js-form-input-error {
+  border-color: @color-red  !important;
+  color       : @color-red  !important;
+
+  &::-webkit-input-placeholder {
+    color: @color-red  !important;
+  }
+
+  &::-moz-placeholder {
+    color: @color-red  !important;
+  }
+
+  /* Firefox 19+ */
+  &:-moz-placeholder {
+    color: @color-red  !important;
+  }
+
+  /* Firefox 18- */
+  &:-ms-input-placeholder {
+    color: @color-red  !important;
+  }
+}
