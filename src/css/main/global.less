@@ -46,10 +46,13 @@ body {
   @media screen and (max-width: @ipad) { position: relative;}  /*md - 960px*/
   @media screen and (max-width: @mob) { position: relative;}  /*sm - 670px*/
   @media screen and (max-width: @mob-small) { position: relative;} /*мобилки вертикальные - 480px*/
+  @media screen and (max-width: 350px) { position: relative; }
 
   @media screen and (min-width: @min-mob) {    position: relative;  }
   @media screen and (min-width: @min-ipad) { position: relative;}
   @media screen and (min-width: @min-tablet) { position: relative;}
+
+  @media screen and (min-width: @min-ipad) and (max-height: 600px) {  position: relative;  }
 }
 
 /* + inner*/
